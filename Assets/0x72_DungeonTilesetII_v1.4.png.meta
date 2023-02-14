@@ -113,7 +113,7 @@ TextureImporter:
         width: 15
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,6 +121,27 @@ TextureImporter:
       bones: []
       spriteID: d95bd370556fb704b8e521497903140f
       internalID: -780616868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: weapon_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 465
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56bd2160c8f63d45b5b6f51b40eb2ef
+      internalID: 547827739
       vertices: []
       indices: 
       edges: []
@@ -137,6 +158,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       player_1: -780616868
+      weapon_1: 547827739
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
