@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class Player: MonoBehaviour
 {
     [SerializeField]
     private float speed =10;
@@ -23,6 +23,10 @@ public class PlayerController : MonoBehaviour
         nuSpeed.x=(horizontalInput*speed);
         nuSpeed.y=(verticalInput*speed);
         rb.velocity=nuSpeed;
+
+        if (horizontalInput>0)transform.localScale = Vector3.one;
+        else if (horizontalInput<0)transform.localScale = new Vector3 (-1,1,1);
+
     }
 
 
