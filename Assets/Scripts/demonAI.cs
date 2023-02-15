@@ -25,10 +25,14 @@ public class demonAI : MonoBehaviour
         // Find the components
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
-        
-        seeker.StartPath(rb.position, target.position, onPathComplete);
+        InvokeRepeating("UpdatePath", 0f, 1f);
     }
 
+    void UpdatePath()
+    {
+        if (seeker.IsDone())
+            seeker.StartPath(rb.position, target.position, onPathComplete);
+    }
     void onPathComplete(Path p) 
     {
         if (!p.error)
@@ -55,14 +59,17 @@ public class demonAI : MonoBehaviour
         }
 
         // Get the direction to move towards
-        Vector2 direction = ((Vector2) path.vectorPath[currentWayPoint] - rb.position).normalized;
+        Vector2 direction = ((Vector2) path.vectorPath[currentWayPoint] - rb.position).normalized; // Makes sure its one with normalized
+        // move towards the current direction
         Vector2 force = direction * speed * Time.fixedDeltaTime;
 
         
         rb.AddForce(force);
         // Distance to next waypoint
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWayPoint]);
-        if (distance < nextWayPointDistance)
+
+
+        if (distance < nextWayPointDistance) // reached current waypoint
         {
             currentWayPoint++;
         }
