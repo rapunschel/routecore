@@ -4,8 +4,10 @@ using UnityEngine;
 using Pathfinding;
 
 
-public class demonAI : MonoBehaviour
+public class demonAI : Combatant
 {
+
+    public bool active = false;
     public Transform target;
 
     public float speed = 400f; // Default to 2
@@ -30,7 +32,7 @@ public class demonAI : MonoBehaviour
 
     void UpdatePath()
     {
-        if (seeker.IsDone())
+        if (active && seeker.IsDone())
             seeker.StartPath(rb.position, target.position, onPathComplete);
     }
     void onPathComplete(Path p) 
