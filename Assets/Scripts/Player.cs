@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player: MonoBehaviour
+public class Player: Combatant
 {
     [SerializeField]
     private float speed =10;
@@ -15,14 +15,23 @@ public class Player: MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float horizontalInput = Input.GetAxis ("Horizontal"); 
         float verticalInput = Input.GetAxis ("Vertical");
         Vector2 nuSpeed = new Vector2 (0,0);
         nuSpeed.x=(horizontalInput*speed);
         nuSpeed.y=(verticalInput*speed);
+        
+        //don't increase total max speed if moving diagonally
+        if (nuSpeed.magnitude > speed) nuSpeed = nuSpeed.normalized*speed;
+        
+        nuSpeed.x += pushDirection.x;
+        nuSpeed.y+= pushDirection.y;
+
         rb.velocity=nuSpeed;
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
+
 
         if (horizontalInput>0)transform.localScale = Vector3.one;
         else if (horizontalInput<0)transform.localScale = new Vector3 (-1,1,1);
