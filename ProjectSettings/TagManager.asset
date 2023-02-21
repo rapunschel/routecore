@@ -48,3 +48,9 @@ TagManager:
   - name: Actor
     uniqueID: 1137506825
     locked: 0
+  - name: walls
+    uniqueID: 187705183
+    locked: 0
+  - name: column tops
+    uniqueID: 3781099515
+    locked: 0
