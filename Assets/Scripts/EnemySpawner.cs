@@ -25,7 +25,7 @@ public class EnemySpawner : Enemy
             Enemy newEnemy = Instantiate(enemy, this.transform.position, this.transform.rotation);
             newEnemy.target= target;
         }
-        
-       
     }
+
+
 }
