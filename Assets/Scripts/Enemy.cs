@@ -4,10 +4,10 @@ using UnityEngine;
 using Pathfinding;
 
 
-public class demonAI : Combatant
+public class Enemy : Combatant
 {
 
-    public bool active = false;
+    public bool canMove = true;
     public Transform target;
 
     public float speed = 400f; // Default to 2
@@ -22,7 +22,7 @@ public class demonAI : Combatant
 
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         // Find the components
         seeker = GetComponent<Seeker>();
@@ -32,7 +32,7 @@ public class demonAI : Combatant
 
     void UpdatePath()
     {
-        if (active && seeker.IsDone())
+        if (canMove && seeker.IsDone())
             seeker.StartPath(rb.position, target.position, onPathComplete);
     }
     void onPathComplete(Path p) 
@@ -44,7 +44,7 @@ public class demonAI : Combatant
         }
     }
     // Update is called once per frame
-    void FixedUpdate()
+    protected virtual void FixedUpdate()
     {
         // Check that we have a path
         if (path == null)
@@ -70,10 +70,30 @@ public class demonAI : Combatant
         // Distance to next waypoint
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWayPoint]);
 
+        //Push if hit
+       /* Vector2 nuSpeed = Vector2.zero;
+        nuSpeed.x += pushDirection.x;
+        nuSpeed.y+= pushDirection.y;
+        rb.velocity=nuSpeed;
+        pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);*/
+
 
         if (distance < nextWayPointDistance) // reached current waypoint
         {
             currentWayPoint++;
         }
     }
+
+    protected override void RecieveDamage(Damage dmg){
+        base.RecieveDamage(dmg);
+        rb.AddForce(pushDirection);
+
+    }
+
+
+        protected override void Death()
+    {
+        Destroy(gameObject);
+    }
+
 }

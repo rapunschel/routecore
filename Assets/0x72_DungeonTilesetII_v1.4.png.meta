@@ -134,7 +134,7 @@ TextureImporter:
         width: 10
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,27 @@ TextureImporter:
       bones: []
       spriteID: d56bd2160c8f63d45b5b6f51b40eb2ef
       internalID: 547827739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spawn
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 384
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a850b54c128c99748bae61fd024c959f
+      internalID: -769141165
       vertices: []
       indices: 
       edges: []
@@ -159,6 +180,7 @@ TextureImporter:
     nameFileIdTable:
       player_1: -780616868
       weapon_1: 547827739
+      spawn: -769141165
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
