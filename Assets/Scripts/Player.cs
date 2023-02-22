@@ -8,6 +8,7 @@ public class Player: Combatant
     private float speed =10;
     private Vector2 currSpeed;
     private Rigidbody2D rb;
+    public Tracker weaponTracker;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,8 +34,15 @@ public class Player: Combatant
         pushDirection = Vector3.Lerp(pushDirection, Vector3.zero, pushRecoverySpeed);
 
 
-        if (horizontalInput>0)transform.localScale = Vector3.one;
-        else if (horizontalInput<0)transform.localScale = new Vector3 (-1,1,1);
+        if (horizontalInput>0){
+            transform.localScale = Vector3.one; 
+            weaponTracker.reverse=false;   
+        }
+        else if (horizontalInput<0){
+             transform.localScale = new Vector3 (-1,1,1); 
+             weaponTracker.reverse=true;
+        }
+       
 
     }
 
