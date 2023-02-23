@@ -31,7 +31,11 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         Enemy[] enemies = {monster1, monster2, monster3, monster4, monster5};
-   
+
+        for (int i = 0; i < 5; i++)
+        {
+            enemies[i].target = enemies[i].transform; // Set itself as
+        }
         this.enemies = enemies;
         
     }
