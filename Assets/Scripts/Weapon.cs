@@ -5,7 +5,7 @@ using UnityEngine;
 public class Weapon : Collidable
 {
     //damage
-    public int damageDealt =1;
+    public int damageDealt =2;
     public float pushForce=2.0f;
 
     //upgrades
@@ -27,7 +27,7 @@ public class Weapon : Collidable
     {
         base.Update();
 
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if((Input.GetKeyDown(KeyCode.Mouse0))&& Time.time - lastSwing > cooldown){
             lastSwing = Time.time;
             Swing();
         }
@@ -36,7 +36,7 @@ public class Weapon : Collidable
     protected override void OnCollide(Collider2D coll)
     {
         if (coll.tag == "Combatant"){
-            if (coll.name == "player_1")
+            if (coll.name == "Player")
                 return;
             
             Damage dmg = new Damage {damageAmount = damageDealt, origin=transform.position, pushForce=pushForce};
