@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-
+    public Sprite openDoorSprite;
     public Sprite closedDoorSprite;
     public SpriteRenderer exitDoor;
-    public Enemy enemy; 
-
+  //  public Transform player; 
+    private bool fightOver = false;
     // Used to spawn the monsters at different places based on where the player enters
     Vector2[] enemyPos = { new Vector2(-2, 3)
                          //, new Vector2(-4,9)
@@ -31,6 +31,7 @@ public class RoomSpawner : MonoBehaviour
     void Start()
     {
         Enemy[] enemies = {monster1, monster2, monster3, monster4, monster5};
+   
         this.enemies = enemies;
         
     }
@@ -39,7 +40,33 @@ public class RoomSpawner : MonoBehaviour
     void Update()
     {
         // Check if all the monsters are dead
-        //Debug.Log("FRAME");
+        bool isAllDead = false;
+        if (!fightOver)
+        {
+            // Check if all monsters hp is 0
+            for (int i = 0; i < 5; i++)
+            {
+
+                if (enemies[i] == null) // Check if it's null as we delete the gameobject
+                {
+                    isAllDead = true; // Set to true
+                    continue;
+                }
+                else 
+                {
+                    isAllDead = false; // If its not null, still alive
+                }
+                
+            }
+            if (isAllDead)
+                {
+                    // Open the door to let the player out
+                    exitDoor.GetComponent<Collider2D>().isTrigger = true; // allow letting through
+                    exitDoor.sprite = openDoorSprite;
+                    // Set sentinel value to true
+                    fightOver = true;
+                }
+        }
     }
 
 
@@ -60,7 +87,7 @@ public class RoomSpawner : MonoBehaviour
 
         }
         */
-
+        
         for (int j = 0; j < enemies.Length; j++)
         {
             enemies[j].target = other.transform;
@@ -69,8 +96,8 @@ public class RoomSpawner : MonoBehaviour
         exitDoor.sprite = closedDoorSprite;
     }
 
-    void OnTriggerStay2D(Collider2D other) 
+    void OnTriggerExit2D(Collider2D other) 
     {
- 
+
     }
 }
