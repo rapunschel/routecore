@@ -33,18 +33,19 @@ public class RoomSpawner : MonoBehaviour
         Enemy[] enemies = {monster1, monster2, monster3, monster4, monster5};
 
         for (int i = 0; i < 5; i++)
-        {
-            enemies[i].target = enemies[i].transform; // Set itself as
+        {   
+            if (enemies[i] != null)
+                enemies[i].target = enemies[i].transform; // Set itself as
         }
         this.enemies = enemies;
         
     }
+        bool isAllDead = false;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Check if all the monsters are dead
-        bool isAllDead = false;
         if (!fightOver)
         {
             // Check if all monsters hp is 0
@@ -73,7 +74,7 @@ public class RoomSpawner : MonoBehaviour
         }
     }
 
-
+    int counter = 0;
     void OnTriggerEnter2D(Collider2D other) 
     {
         // Get player vector
@@ -91,7 +92,7 @@ public class RoomSpawner : MonoBehaviour
 
         }
         */
-        
+        Debug.Log(counter);
         for (int j = 0; j < enemies.Length; j++)
         {
             enemies[j].target = other.transform;
