@@ -52,7 +52,7 @@ public class RoomSpawner : MonoBehaviour
             for (int i = 0; i < 5; i++)
             {
 
-                if (enemies[i] == null) // Check if it's null as we delete the gameobject
+                if (enemies[i]==null) // Check if it's null as we delete the gameobject
                 {
                     isAllDead = true; // Set to true
                     continue;
@@ -60,6 +60,7 @@ public class RoomSpawner : MonoBehaviour
                 else 
                 {
                     isAllDead = false; // If its not null, still alive
+                    return;
                 }
                 
             }
@@ -96,6 +97,7 @@ public class RoomSpawner : MonoBehaviour
         for (int j = 0; j < enemies.Length; j++)
         {
             enemies[j].target = other.transform;
+            enemies[j].canMove=true;
         }
         exitDoor.GetComponent<Collider2D>().isTrigger = false;
         exitDoor.sprite = closedDoorSprite;

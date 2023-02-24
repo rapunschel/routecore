@@ -155,7 +155,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,69 @@ TextureImporter:
       bones: []
       spriteID: a850b54c128c99748bae61fd024c959f
       internalID: -769141165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fullheart
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 241
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abba39314791acf4d98d1e386e1202a0
+      internalID: 486169553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halfheart
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 241
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581290a59da1d9f48a748c4e092ee3de
+      internalID: -734377664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Emptyheart
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 241
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a7bfcb4a4c41a4bb365378216ebca2
+      internalID: 680088366
       vertices: []
       indices: 
       edges: []
@@ -181,6 +244,9 @@ TextureImporter:
       player_1: -780616868
       weapon_1: 547827739
       spawn: -769141165
+      Fullheart: 486169553
+      Emptyheart: 680088366
+      Halfheart: -734377664
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
