@@ -26,8 +26,10 @@ public class CloseDoors : MonoBehaviour
  
     private void OnTriggerExit2D(Collider2D other) 
     {
-        SpriteRenderer[] doors = {roomDoor1, roomDoor2, roomDoor3};
-        closeBottomDoors(doors);
+        if(other.name=="Player"){
+            SpriteRenderer[] doors = {roomDoor1, roomDoor2, roomDoor3};
+            closeBottomDoors(doors);
+        }
     }
 
     private void closeBottomDoors(SpriteRenderer[] doors) 

@@ -86,7 +86,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   damage: 2
-  pushForce: 15
+  pushForce: 20
 --- !u!1 &220345843698129704
 GameObject:
   m_ObjectHideFlags: 0

@@ -92,15 +92,17 @@ public class RoomSpawner : MonoBehaviour
             Debug.Log("SPAWNED MONSTERS: " + i);
 
         }
-        */
-        Debug.Log(counter);
-        for (int j = 0; j < enemies.Length; j++)
-        {
-            enemies[j].target = other.transform;
-            enemies[j].canMove=true;
+            */
+        if(other.name=="Player"){
+            Debug.Log(counter);
+            for (int j = 0; j < enemies.Length; j++)
+            {
+                enemies[j].target = other.transform;
+                enemies[j].canMove=true;
+            }
+            exitDoor.GetComponent<Collider2D>().isTrigger = false;
+            exitDoor.sprite = closedDoorSprite;
         }
-        exitDoor.GetComponent<Collider2D>().isTrigger = false;
-        exitDoor.sprite = closedDoorSprite;
     }
 
     void OnTriggerExit2D(Collider2D other) 
