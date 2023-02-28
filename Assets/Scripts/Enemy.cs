@@ -18,7 +18,9 @@ public class Enemy : Combatant
     bool reachedEnd = false;
 
     Seeker seeker;
-    Rigidbody2D rb;
+    protected Rigidbody2D rb;
+
+
 
 
     // Start is called before the first frame update

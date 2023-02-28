@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player: Combatant
 {
@@ -45,6 +46,19 @@ public class Player: Combatant
        
 
     }
+
+    protected override void Death(){
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void Heal(int healing){
+        hitpoints+=healing;
+        if (hitpoints>maxHitpoints) hitpoints=maxHitpoints;
+        Debug.Log(this.name +" healed "+ healing +" damage and has " + hitpoints + " health left");
+
+    }
+
+
 
 
 }
