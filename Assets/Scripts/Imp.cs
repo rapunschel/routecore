@@ -41,7 +41,6 @@ public class Imp : Enemy
         anim.SetTrigger("Shooting");
         lastFired = Time.time;
         currentcooldown= Random.Range(cooldownmin, cooldownmax);
-        canMove=false;
     }
     //spawns projectile
     private void Shoot(){
@@ -49,6 +48,6 @@ public class Imp : Enemy
         Rigidbody2D prb = projectile.GetComponent<Rigidbody2D>();
         projectile.transform.LookAt(target, Vector3.forward);
         prb.AddRelativeForce(projectile.transform.forward*5,ForceMode2D.Impulse);
-        canMove=true;
+        shooting = false;
     }
 }
