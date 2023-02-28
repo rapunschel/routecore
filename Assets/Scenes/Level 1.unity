@@ -14585,6 +14585,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80656204}
+  - component: {fileID: 80656207}
+  - component: {fileID: 80656206}
+  - component: {fileID: 80656205}
   m_Layer: 0
   m_Name: room6
   m_TagString: Untagged
@@ -14615,6 +14618,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &80656205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80656203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 777936857}
+  monster1: {fileID: 558138788}
+  monster2: {fileID: 1093902230}
+  monster3: {fileID: 318546207}
+  monster4: {fileID: 584274331}
+  monster5: {fileID: 436740564}
+--- !u!114 &80656206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80656203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 1888579022}
+  roomDoor2: {fileID: 1338641133}
+  roomDoor3: {fileID: 491774515}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &80656207
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80656203}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 18.738861, y: -23.598928}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.804634, y: 0.4871254}
+  m_EdgeRadius: 0
 --- !u!4 &108036138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
@@ -14690,7 +14755,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1064558, y: 2.6803055}
@@ -14804,6 +14869,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 189894236}
+  - component: {fileID: 189894239}
+  - component: {fileID: 189894238}
+  - component: {fileID: 189894237}
   m_Layer: 0
   m_Name: room7
   m_TagString: Untagged
@@ -14834,6 +14902,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &189894237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189894235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 1017399956}
+  monster1: {fileID: 906630260}
+  monster2: {fileID: 15920402}
+  monster3: {fileID: 949953116}
+  monster4: {fileID: 1142775865}
+  monster5: {fileID: 1516989501}
+--- !u!114 &189894238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189894235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 630421032}
+  roomDoor2: {fileID: 1851139169}
+  roomDoor3: {fileID: 222260489}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &189894239
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189894235}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.0596747, y: 0.11355591}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.1193495, y: 0.4322052}
+  m_EdgeRadius: 0
 --- !u!1001 &216900487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14902,8 +15032,6 @@ GameObject:
   - component: {fileID: 222260493}
   - component: {fileID: 222260489}
   - component: {fileID: 222260492}
-  - component: {fileID: 222260491}
-  - component: {fileID: 222260490}
   m_Layer: 0
   m_Name: room9_entry_door
   m_TagString: Untagged
@@ -14963,42 +15091,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &222260490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222260488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 531706613}
-  monster1: {fileID: 1991091462}
-  monster2: {fileID: 579291294}
-  monster3: {fileID: 787141137}
-  monster4: {fileID: 653362414}
-  monster5: {fileID: 70189767}
---- !u!114 &222260491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 222260488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 630421032}
-  roomDoor2: {fileID: 1851139169}
-  roomDoor3: {fileID: 222260489}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &222260492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15099,7 +15191,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1064558, y: 2.6803055}
@@ -15715,7 +15807,6 @@ GameObject:
   m_Component:
   - component: {fileID: 441629891}
   - component: {fileID: 441629893}
-  - component: {fileID: 441629892}
   m_Layer: 0
   m_Name: 'onExitRoom '
   m_TagString: Untagged
@@ -15738,22 +15829,6 @@ Transform:
   m_Father: {fileID: 1644007487}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &441629892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441629890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 1104988206}
-  roomDoor2: {fileID: 941156274}
-  roomDoor3: {fileID: 1076178594}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &441629893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15791,8 +15866,6 @@ GameObject:
   - component: {fileID: 491774511}
   - component: {fileID: 491774515}
   - component: {fileID: 491774514}
-  - component: {fileID: 491774513}
-  - component: {fileID: 491774512}
   m_Layer: 0
   m_Name: room6_entry_door
   m_TagString: Untagged
@@ -15815,42 +15888,6 @@ Transform:
   m_Father: {fileID: 80656204}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &491774512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491774510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 777936857}
-  monster1: {fileID: 558138788}
-  monster2: {fileID: 1093902230}
-  monster3: {fileID: 318546207}
-  monster4: {fileID: 584274331}
-  monster5: {fileID: 436740564}
---- !u!114 &491774513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491774510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 1888579022}
-  roomDoor2: {fileID: 1338641133}
-  roomDoor3: {fileID: 491774515}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &491774514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16464,6 +16501,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 593055987}
+  - component: {fileID: 593055990}
+  - component: {fileID: 593055989}
+  - component: {fileID: 593055988}
   m_Layer: 0
   m_Name: room3
   m_TagString: Untagged
@@ -16489,6 +16529,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593055988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593055986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 1076178594}
+  monster1: {fileID: 334060053}
+  monster2: {fileID: 1466005794}
+  monster3: {fileID: 1862705858}
+  monster4: {fileID: 878379818}
+  monster5: {fileID: 1751487789}
+--- !u!114 &593055989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593055986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 1829412227}
+  roomDoor2: {fileID: 1947608901}
+  roomDoor3: {fileID: 1489127634}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &593055990
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593055986}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 17.04695, y: -4.294471}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.080044, y: 0.37154198}
+  m_EdgeRadius: 0
 --- !u!1001 &604562385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16630,8 +16732,6 @@ GameObject:
   - component: {fileID: 630421028}
   - component: {fileID: 630421032}
   - component: {fileID: 630421031}
-  - component: {fileID: 630421030}
-  - component: {fileID: 630421029}
   m_Layer: 0
   m_Name: room7_entry_door
   m_TagString: Untagged
@@ -16654,42 +16754,6 @@ Transform:
   m_Father: {fileID: 189894236}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &630421029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630421027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 1017399956}
-  monster1: {fileID: 906630260}
-  monster2: {fileID: 15920402}
-  monster3: {fileID: 949953116}
-  monster4: {fileID: 1142775865}
-  monster5: {fileID: 1516989501}
---- !u!114 &630421030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 630421027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 630421032}
-  roomDoor2: {fileID: 1851139169}
-  roomDoor3: {fileID: 222260489}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &630421031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17444,6 +17508,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 771149742}
+  - component: {fileID: 771149745}
+  - component: {fileID: 771149744}
+  - component: {fileID: 771149743}
   m_Layer: 0
   m_Name: room4
   m_TagString: Untagged
@@ -17474,6 +17541,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &771149743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771149741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 1375441769}
+  monster1: {fileID: 108036142}
+  monster2: {fileID: 1964340268}
+  monster3: {fileID: 1068021690}
+  monster4: {fileID: 2128291187}
+  monster5: {fileID: 1578225745}
+--- !u!114 &771149744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771149741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 1888579022}
+  roomDoor2: {fileID: 1338641133}
+  roomDoor3: {fileID: 491774515}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &771149745
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771149741}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.33788, y: -0.17394447}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.268751, y: 0.24403763}
+  m_EdgeRadius: 0
 --- !u!1 &777936853
 GameObject:
   m_ObjectHideFlags: 0
@@ -18814,7 +18943,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.1064558, y: 2.6803055}
@@ -19084,6 +19213,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215015069}
+  - component: {fileID: 1215015072}
+  - component: {fileID: 1215015071}
+  - component: {fileID: 1215015070}
   m_Layer: 0
   m_Name: room9
   m_TagString: Untagged
@@ -19114,6 +19246,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1215015070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215015068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 630421032}
+  roomDoor2: {fileID: 1851139169}
+  roomDoor3: {fileID: 222260489}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!114 &1215015071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215015068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 531706613}
+  monster1: {fileID: 1991091462}
+  monster2: {fileID: 579291294}
+  monster3: {fileID: 787141137}
+  monster4: {fileID: 653362414}
+  monster5: {fileID: 70189767}
+--- !u!61 &1215015072
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215015068}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.826186, y: 0.19872665}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.088064, y: 0.6025467}
+  m_EdgeRadius: 0
 --- !u!1001 &1234776235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19352,6 +19546,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1270902835}
+  - component: {fileID: 1270902838}
+  - component: {fileID: 1270902837}
+  - component: {fileID: 1270902836}
   m_Layer: 0
   m_Name: room8
   m_TagString: Untagged
@@ -19382,6 +19579,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270902836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270902834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 1184373131}
+  monster1: {fileID: 639064671}
+  monster2: {fileID: 1617491081}
+  monster3: {fileID: 1349068137}
+  monster4: {fileID: 64802994}
+  monster5: {fileID: 1922006488}
+--- !u!114 &1270902837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270902834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 630421032}
+  roomDoor2: {fileID: 1851139169}
+  roomDoor3: {fileID: 222260489}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &1270902838
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270902834}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -4.826186, y: 0.1419487}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.1320972, y: 0.7161026}
+  m_EdgeRadius: 0
 --- !u!1001 &1276465462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19537,8 +19796,6 @@ GameObject:
   - component: {fileID: 1338641129}
   - component: {fileID: 1338641133}
   - component: {fileID: 1338641132}
-  - component: {fileID: 1338641131}
-  - component: {fileID: 1338641130}
   m_Layer: 0
   m_Name: room5_entry_door
   m_TagString: Untagged
@@ -19561,42 +19818,6 @@ Transform:
   m_Father: {fileID: 1655953503}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1338641130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338641128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 322330544}
-  monster1: {fileID: 2043023458}
-  monster2: {fileID: 1099844851}
-  monster3: {fileID: 2016631596}
-  monster4: {fileID: 1023631614}
-  monster5: {fileID: 149144089}
---- !u!114 &1338641131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338641128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 1888579022}
-  roomDoor2: {fileID: 1338641133}
-  roomDoor3: {fileID: 491774515}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &1338641132
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20700,8 +20921,6 @@ GameObject:
   - component: {fileID: 1489127635}
   - component: {fileID: 1489127634}
   - component: {fileID: 1489127636}
-  - component: {fileID: 1489127637}
-  - component: {fileID: 1489127638}
   m_Layer: 0
   m_Name: room3_entry_door
   m_TagString: Untagged
@@ -20807,42 +21026,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6900883, y: 1.2196592}
   m_EdgeRadius: 0
---- !u!114 &1489127637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489127633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 1829412227}
-  roomDoor2: {fileID: 1947608901}
-  roomDoor3: {fileID: 1489127634}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
---- !u!114 &1489127638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1489127633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 1076178594}
-  monster1: {fileID: 334060053}
-  monster2: {fileID: 1466005794}
-  monster3: {fileID: 1862705858}
-  monster4: {fileID: 878379818}
-  monster5: {fileID: 1751487789}
 --- !u!4 &1516989498 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 220345843698129711, guid: aa75abcbcfa5b2c4eada81f9884ae056, type: 3}
@@ -21305,6 +21488,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1644007487}
+  - component: {fileID: 1644007490}
+  - component: {fileID: 1644007489}
+  - component: {fileID: 1644007488}
   m_Layer: 0
   m_Name: room1
   m_TagString: Untagged
@@ -21335,6 +21521,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644007488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644007486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 1104988206}
+  roomDoor2: {fileID: 941156274}
+  roomDoor3: {fileID: 1076178594}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!114 &1644007489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644007486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 1104988206}
+  monster1: {fileID: 2047732306}
+  monster2: {fileID: 157472686}
+  monster3: {fileID: 637213426}
+  monster4: {fileID: 1386107154}
+  monster5: {fileID: 613645889}
+--- !u!61 &1644007490
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644007486}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -18.602129, y: -4.603177}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.403717, y: 0.28830528}
+  m_EdgeRadius: 0
 --- !u!1 &1655953502
 GameObject:
   m_ObjectHideFlags: 0
@@ -21344,6 +21592,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1655953503}
+  - component: {fileID: 1655953506}
+  - component: {fileID: 1655953505}
+  - component: {fileID: 1655953504}
   m_Layer: 0
   m_Name: room5
   m_TagString: Untagged
@@ -21374,6 +21625,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655953504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+  exitDoor: {fileID: 322330544}
+  monster1: {fileID: 2043023458}
+  monster2: {fileID: 1099844851}
+  monster3: {fileID: 2016631596}
+  monster4: {fileID: 1023631614}
+  monster5: {fileID: 149144089}
+--- !u!114 &1655953505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomDoor1: {fileID: 1888579022}
+  roomDoor2: {fileID: 1338641133}
+  roomDoor3: {fileID: 491774515}
+  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
+--- !u!61 &1655953506
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655953502}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 18.605194, y: -23.987516}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.936638, y: 0.32777023}
+  m_EdgeRadius: 0
 --- !u!1001 &1662302105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21979,7 +22292,6 @@ GameObject:
   - component: {fileID: 1829412227}
   - component: {fileID: 1829412228}
   - component: {fileID: 1829412230}
-  - component: {fileID: 1829412231}
   m_Layer: 0
   m_Name: room1_entry_door
   m_TagString: Untagged
@@ -22096,26 +22408,6 @@ MonoBehaviour:
   roomDoor2: {fileID: 1947608901}
   roomDoor3: {fileID: 1489127634}
   closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
---- !u!114 &1829412231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829412226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 1104988206}
-  monster1: {fileID: 2047732306}
-  monster2: {fileID: 157472686}
-  monster3: {fileID: 637213426}
-  monster4: {fileID: 1386107154}
-  monster5: {fileID: 613645889}
 --- !u!1001 &1836074853
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22184,8 +22476,6 @@ GameObject:
   - component: {fileID: 1851139165}
   - component: {fileID: 1851139169}
   - component: {fileID: 1851139168}
-  - component: {fileID: 1851139167}
-  - component: {fileID: 1851139166}
   m_Layer: 0
   m_Name: room8_entry_door
   m_TagString: Untagged
@@ -22208,42 +22498,6 @@ Transform:
   m_Father: {fileID: 1270902835}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1851139166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851139164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 1184373131}
-  monster1: {fileID: 639064671}
-  monster2: {fileID: 1617491081}
-  monster3: {fileID: 1349068137}
-  monster4: {fileID: 64802994}
-  monster5: {fileID: 1922006488}
---- !u!114 &1851139167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1851139164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 630421032}
-  roomDoor2: {fileID: 1851139169}
-  roomDoor3: {fileID: 222260489}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &1851139168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22410,8 +22664,6 @@ GameObject:
   - component: {fileID: 1888579018}
   - component: {fileID: 1888579022}
   - component: {fileID: 1888579021}
-  - component: {fileID: 1888579020}
-  - component: {fileID: 1888579019}
   m_Layer: 0
   m_Name: room4_entry_door
   m_TagString: Untagged
@@ -22434,42 +22686,6 @@ Transform:
   m_Father: {fileID: 771149742}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1888579019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888579017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258be5a21d9989b4fa6d2dc832eaa743, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoorSprite: {fileID: 21300000, guid: 5417e8636b8580345b5e0b2abbfe6f28, type: 3}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
-  exitDoor: {fileID: 1375441769}
-  monster1: {fileID: 108036142}
-  monster2: {fileID: 1964340268}
-  monster3: {fileID: 1068021690}
-  monster4: {fileID: 2128291187}
-  monster5: {fileID: 1578225745}
---- !u!114 &1888579020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1888579017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d42aba2c6ca842f428e1d24bd94c203b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomDoor1: {fileID: 1888579022}
-  roomDoor2: {fileID: 1338641133}
-  roomDoor3: {fileID: 491774515}
-  closedDoorSprite: {fileID: 21300000, guid: 0d19f002349a9514788a936a1fce812b, type: 3}
 --- !u!61 &1888579021
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -53833,7 +54049,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.850482, y: -3.0229359}
+  m_Offset: {x: -8.850482, y: -3.1490126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -53844,7 +54060,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.6092243, y: 0.52976227}
+  m_Size: {x: 6.6092243, y: 0.27760887}
   m_EdgeRadius: 0
 --- !u!1001 &2090170560
 PrefabInstance:
