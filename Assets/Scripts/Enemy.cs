@@ -7,7 +7,6 @@ using Pathfinding;
 public class Enemy : Combatant
 {
 
-    public bool canMove = true;
     public Transform target;
 
     public float speed = 400f; // Default to 2
@@ -24,8 +23,9 @@ public class Enemy : Combatant
 
 
     // Start is called before the first frame update
-    protected virtual void Start()
-    {
+    protected override void Start()
+    {   
+        base.Start();
         // Find the components
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
@@ -88,6 +88,7 @@ public class Enemy : Combatant
 
     protected override void RecieveDamage(Damage dmg){
         base.RecieveDamage(dmg);
+        rb.velocity=Vector2.zero;
         rb.AddForce(pushDirection);
 
     }
