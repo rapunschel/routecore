@@ -17642,15 +17642,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfac79dcd53314b48aba8217f9bc23d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hearts: []
   image1: {fileID: 240038530}
   image2: {fileID: 1678270267}
   image3: {fileID: 2125542704}
   image4: {fileID: 881375049}
   image5: {fileID: 1359443301}
-  fullheart: {fileID: 0}
-  halfheart: {fileID: 0}
-  emptyheart: {fileID: 0}
+  fullheart: {fileID: 486169553, guid: 56dd2959f2c64584b8c4ce5fc9da8e82, type: 3}
+  halfheart: {fileID: -734377664, guid: 56dd2959f2c64584b8c4ce5fc9da8e82, type: 3}
+  emptyheart: {fileID: 680088366, guid: 56dd2959f2c64584b8c4ce5fc9da8e82, type: 3}
 --- !u!1001 &768926226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23023,7 +23022,7 @@ MonoBehaviour:
   flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   speed: 5
   weaponTracker: {fileID: 1265776765}
-  healthBar: {fileID: 763185567}
+  healthBar: {fileID: 763185571}
 --- !u!212 &1896103789
 SpriteRenderer:
   m_ObjectHideFlags: 0
