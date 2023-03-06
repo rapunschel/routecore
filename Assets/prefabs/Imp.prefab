@@ -32,16 +32,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9873617
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.525357
+      value: -2.5268555
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.175278
+      value: 7.231879
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.55919766
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392664, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -73,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392667, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_Name
-      value: Imp
+      value: Imp (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392671, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -198,6 +202,7 @@ MonoBehaviour:
   hitpoints: 6
   maxHitpoints: 6
   pushRecoverySpeed: 0.09
+  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   canMove: 0
   target: {fileID: 0}
   speed: 400

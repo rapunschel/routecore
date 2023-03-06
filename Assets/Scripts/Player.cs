@@ -10,9 +10,12 @@ public class Player: Combatant
     private Vector2 currSpeed;
     private Rigidbody2D rb;
     public Tracker weaponTracker;
+
+    public Healthbar healthBar;
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -55,7 +58,13 @@ public class Player: Combatant
         hitpoints+=healing;
         if (hitpoints>maxHitpoints) hitpoints=maxHitpoints;
         Debug.Log(this.name +" healed "+ healing +" damage and has " + hitpoints + " health left");
+        healthBar.UpdateHealth(hitpoints);
+    }
 
+    protected override void RecieveDamage(Damage dmg)
+    {
+        base.RecieveDamage(dmg);
+        healthBar.UpdateHealth(hitpoints);
     }
 
 
