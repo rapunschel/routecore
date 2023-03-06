@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Combatant
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
     locked: 0
   - name: column tops
     uniqueID: 3781099515
+    locked: 0
+  - name: Projectile
+    uniqueID: 2179403405
     locked: 0
   - name: UI
     uniqueID: 3917096641

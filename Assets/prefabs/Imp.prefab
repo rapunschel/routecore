@@ -77,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392667, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_Name
-      value: Imp (3)
+      value: Imp
       objectReference: {fileID: 0}
     - target: {fileID: 5702913456659392671, guid: d6312a8c55167c942b8e465e8311bde0, type: 3}
       propertyPath: m_SpriteTilingProperty.pivot.x
@@ -202,10 +202,12 @@ MonoBehaviour:
   hitpoints: 6
   maxHitpoints: 6
   pushRecoverySpeed: 0.09
-  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   canMove: 0
+  playWhenHit: {fileID: 8300000, guid: 0779bc8c44b05e34d8a68f7a10b387fb, type: 3}
+  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   target: {fileID: 0}
   speed: 400
   nextWayPointDistance: 100
   shooting: 0
   fireball: {fileID: 908781199079654001, guid: 5e2253eebae959742a4f7564b7ff36a9, type: 3}
+  attackClip: {fileID: 8300000, guid: 1006353b92a89be43b8fec69a8da5c76, type: 3}
