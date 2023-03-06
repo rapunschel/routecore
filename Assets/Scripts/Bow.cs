@@ -11,7 +11,7 @@ public class Bow : MonoBehaviour
 
    //shoot
     private Animator anim;
-    private float cooldown = 0.5f;
+    private float cooldown = 0.9f;
     private float lastSwing = 0;
     public Arrow arrow;
     public bool reverse = false;
