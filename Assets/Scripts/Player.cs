@@ -11,6 +11,10 @@ public class Player: Combatant
     private Rigidbody2D rb;
     public Tracker weaponTracker;
 
+    public Weapon sword;
+
+    public Bow bow;
+
     public Healthbar healthBar;
     // Start is called before the first frame update
     protected override void Start()
@@ -40,10 +44,12 @@ public class Player: Combatant
 
         if (horizontalInput>0){
             transform.localScale = Vector3.one; 
+            bow.reverse = false;
             weaponTracker.reverse=false;   
         }
         else if (horizontalInput<0){
-             transform.localScale = new Vector3 (-1,1,1); 
+             transform.localScale = new Vector3 (-1,1,1);
+             bow.reverse = true; 
              weaponTracker.reverse=true;
         }
        
@@ -67,6 +73,10 @@ public class Player: Combatant
         healthBar.UpdateHealth(hitpoints);
     }
 
+    public void SwapToBow(){
+        sword.gameObject.SetActive(false);
+        bow.gameObject.SetActive(true);
+    }
 
 
 

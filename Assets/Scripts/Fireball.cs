@@ -10,7 +10,8 @@ public class Fireball : EnemyHitbox
         //create damage struct and send to player
         Damage dmg = new Damage {damageAmount = damage, origin=transform.position, pushForce=pushForce};
         coll.SendMessage("RecieveDamage", dmg);
+        Destroy(gameObject);
         }
-    //Destroy(gameObject);
+    if (coll.tag=="Wall") Destroy(gameObject); 
     }
 }
