@@ -16,6 +16,8 @@ public class Bow : MonoBehaviour
     public Arrow arrow;
     public bool reverse = false;
 
+    public AudioClip clip;
+
     private void Start()
     {
         spriteRenderer =GetComponent<SpriteRenderer>();
@@ -31,6 +33,7 @@ public class Bow : MonoBehaviour
 
     private void Shoot(){
         anim.SetTrigger("Shoot");
+        AudioSource.PlayClipAtPoint(clip, transform.position);
         Vector3 rota = transform.rotation.eulerAngles;
         rota.z=rota.z-90;
         if (reverse) rota.z +=180;

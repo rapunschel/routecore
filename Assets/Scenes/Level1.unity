@@ -16492,7 +16492,6 @@ GameObject:
   - component: {fileID: 516277754}
   - component: {fileID: 516277753}
   - component: {fileID: 516277752}
-  - component: {fileID: 516277751}
   m_Layer: 0
   m_Name: weapon_1
   m_TagString: Untagged
@@ -16515,19 +16514,6 @@ Transform:
   m_Father: {fileID: 1265776767}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &516277751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516277749}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2374bc3f0b5dd14a82f57ba65eff28e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reverse: 0
 --- !u!61 &516277752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16583,6 +16569,7 @@ MonoBehaviour:
   damageDealt: 2
   pushForce: 10
   weaponLevel: 0
+  clip: {fileID: 8300000, guid: 7f98e35de6e0b814ea098070190a0fa0, type: 3}
 --- !u!95 &516277754
 Animator:
   serializedVersion: 5
@@ -16641,8 +16628,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1137506825
-  m_SortingLayer: 2
+  m_SortingLayerID: -2115563891
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9be493938c370c342bb31eed28295ee3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21809,8 +21796,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1137506825
-  m_SortingLayer: 2
+  m_SortingLayerID: -2115563891
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_Sprite: {fileID: 966693984, guid: 56dd2959f2c64584b8c4ce5fc9da8e82, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21838,6 +21825,7 @@ MonoBehaviour:
   weaponLevel: 0
   arrow: {fileID: 3422376783360609773, guid: d287ad54068e0954996261bc16137e66, type: 3}
   reverse: 0
+  clip: {fileID: 8300000, guid: 1a6524ec2ad6c6046872431cb8821ce8, type: 3}
 --- !u!95 &1448984098
 Animator:
   serializedVersion: 5
@@ -23955,6 +23943,7 @@ MonoBehaviour:
   maxHitpoints: 10
   pushRecoverySpeed: 0.1
   canMove: 1
+  playWhenHit: {fileID: 8300000, guid: 620b86032e4a36a4786ec30c98904b12, type: 3}
   flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   speed: 5
   weaponTracker: {fileID: 1265776765}

@@ -10,7 +10,8 @@ public class Combatant : MonoBehaviour
 
     public bool canMove = true;
 
-
+    //Hitsound
+    public AudioClip playWhenHit;
 
     //iframes
 
@@ -46,6 +47,8 @@ public class Combatant : MonoBehaviour
             hitpoints -= dmg.damageAmount;
             pushDirection = (transform.position - dmg.origin).normalized * dmg.pushForce;
             Flash();
+            AudioSource.PlayClipAtPoint(playWhenHit, transform.position);
+
 
             Debug.Log(this.name +" took "+ dmg.damageAmount +" damage and has " + hitpoints + " health left");
 

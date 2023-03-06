@@ -21,4 +21,8 @@ public class Arrow : Weapon
         base.OnCollide(coll);
         if (coll.tag=="Wall") Destroy(gameObject); 
     }
+
+    protected override void Swing()
+    {
+    }
 }

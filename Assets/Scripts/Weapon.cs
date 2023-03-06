@@ -16,6 +16,8 @@ public class Weapon : Collidable
     private Animator anim;
     private float cooldown = 0.5f;
     private float lastSwing = 0;
+
+    public AudioClip clip;
     protected override void Start()
     {
         base.Start();
@@ -45,7 +47,8 @@ public class Weapon : Collidable
         }
     }
 
-    private void Swing(){
+    protected virtual void Swing(){
         anim.SetTrigger("Swing");
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 }

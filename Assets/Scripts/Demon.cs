@@ -13,9 +13,8 @@ public class Demon : Enemy
     private Animator anim;
     public bool charging = false;
 
-    //projectile
 
-
+    public AudioClip attackClip;
 
 
     protected override void Start()
@@ -37,6 +36,7 @@ public class Demon : Enemy
     //triggers shooting animation and sets cooldown logic
     //spawns projectile
     private void CanCharge(){
+        AudioSource.PlayClipAtPoint(attackClip, transform.position);
         anim.SetTrigger("Charge");
         rb.velocity=Vector2.zero;
         lastFired = Time.time;

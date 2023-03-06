@@ -288,12 +288,14 @@ MonoBehaviour:
   hitpoints: 10
   maxHitpoints: 10
   pushRecoverySpeed: 0.1
-  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   canMove: 0
+  playWhenHit: {fileID: 8300000, guid: 3472e13bd410acf4e9e63142507c121a, type: 3}
+  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   target: {fileID: 0}
   speed: 700
   nextWayPointDistance: 100
   charging: 0
+  attackClip: {fileID: 8300000, guid: b973b8d764956c64aa470f99fb17d306, type: 3}
 --- !u!1 &220345843823146604
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class Imp : Enemy
     //projectile
     public GameObject fireball;
 
+    public AudioClip attackClip;
 
 
 
@@ -37,6 +38,7 @@ public class Imp : Enemy
     }
     //triggers shooting animation and sets cooldown logic
     private void CanShoot(){
+        AudioSource.PlayClipAtPoint(attackClip, transform.position);
         rb.velocity = Vector2.zero;
         anim.SetTrigger("Shooting");
         lastFired = Time.time;

@@ -246,8 +246,9 @@ MonoBehaviour:
   hitpoints: 6
   maxHitpoints: 6
   pushRecoverySpeed: 0.1
-  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   canMove: 1
+  playWhenHit: {fileID: 8300000, guid: 0779bc8c44b05e34d8a68f7a10b387fb, type: 3}
+  flashMaterial: {fileID: 2100000, guid: 98453df59b535274ab9c79846e820054, type: 2}
   target: {fileID: 0}
   speed: 600
   nextWayPointDistance: 100
