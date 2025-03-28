@@ -47,4 +47,5 @@ Originally, we planned for procedurally generated levels, but due to time constr
 
 - Sprites downloaded from <a href="https://0x72.itch.io/dungeontileset-ii" style="color: orange;">0x72's Dungeon Tileset II.</a>
 - Sword sound effect: Downloaded from <a href="https://mixkit.co" style="color: orange;">Mixkit</a>.
-- Background Music: "Hopeless" from <a href="https://pixabay.com/music/build-up-scenes-hopeless-119866/" style="color: orange;">Pixabay</a>.
+- Background Music: "Hopeless" by Guilherme Bernardes William
+downloaded from <a href="https://pixabay.com/music/build-up-scenes-hopeless-119866/" style="color: orange;">Pixabay</a>. 
