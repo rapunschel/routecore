@@ -3,6 +3,8 @@
 
 **Project for the course "Design and construction of digital games - DIT075" (GU).**
 
+
+
 *A retro-style dungeon crawler where every choice matters.*
 
 
@@ -16,6 +18,8 @@
 </p>
 
 ## Gameplay
+**Playable version here:** <a href="https://rapunschel.github.io/routecore-webgl/" style="color: orange;">Play Routecore</a>
+
 In **Routecore**, the player must navigate a dungeon, choosing between three distinct paths at each stage. Each path offers unique monsters and rewards, making every decision impactful.
 
 ### **Controls**
@@ -41,6 +45,6 @@ Originally, we planned for procedurally generated levels, but due to time constr
 
 ## Credits
 
-- Sprites downloaded from [0x72's Dungeon Tileset II.](https://0x72.itch.io/dungeontileset-ii).
-- Sword sound effect: Downloaded  from [Mixkit](Mixkit.co).
-- Background Music: "Hopeless" from [Pixabay](https://pixabay.com/music/build-up-scenes-hopeless-119866/).
+- Sprites downloaded from <a href="https://0x72.itch.io/dungeontileset-ii" style="color: orange;">0x72's Dungeon Tileset II.</a>
+- Sword sound effect: Downloaded from <a href="https://mixkit.co" style="color: orange;">Mixkit</a>.
+- Background Music: "Hopeless" from <a href="https://pixabay.com/music/build-up-scenes-hopeless-119866/" style="color: orange;">Pixabay</a>.
