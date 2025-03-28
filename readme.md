@@ -18,7 +18,7 @@
 </p>
 
 ## Gameplay
-**Playable version here:** <a href="https://rapunschel.github.io/routecore-webgl/" style="color: orange;">Play Routecore</a>
+**Play the game here:** <a href="https://rapunschel.github.io/routecore-webgl/" style="color: orange;">Play Routecore</a>
 
 In **Routecore**, the player must navigate a dungeon, choosing between three distinct paths at each stage. Each path offers unique monsters and rewards, making every decision impactful.
 
